@@ -18,7 +18,7 @@ Run information
 
 ### `TZ`
 
-TimeZone. (i.e Europe/Kiev)
+TimeZone (i.e Europe/Kiev)
 
-## Expose:
+## Exposed Ports:
 See [UniFi - Ports Used](https://help.ubnt.com/hc/en-us/articles/218506997-UniFi-Ports-Used)
