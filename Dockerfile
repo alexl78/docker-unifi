@@ -2,7 +2,7 @@ FROM debian:testing-slim
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-ENV PKGURL=https://www.ubnt.com/downloads/unifi/5.5.14-bfe3ae5b54/unifi_sysvinit_all.deb
+ENV PKGURL=https://www.ubnt.com/downloads/unifi/5.6.3-bed25ecf6c/unifi_sysvinit_all.deb
 
 RUN apt-get clean && \
 	apt-get update && \
