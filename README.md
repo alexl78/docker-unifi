@@ -2,7 +2,7 @@
 
 ## Description
 This is a containerized version of [Ubiqiti Network](https://www.ubnt.com/)'s Unifi Controller version 5.
-The container should run on host network (`--net=host`)
+The container should run on host network (`--net=host`) and in privileged mode (`--privileged`).
 
 ## Volumes:
 ### `/var/lib/unifi`

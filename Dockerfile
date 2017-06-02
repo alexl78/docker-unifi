@@ -4,15 +4,18 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 ENV PKGURL=https://www.ubnt.com/downloads/unifi/5.6.7-63ab9a7965/unifi_sysvinit_all.deb
 
+COPY unifi.init.patch /tmp/
 RUN apt-get clean && \
 	apt-get update && \
 	apt-get dist-upgrade -qy && \
 	mkdir -p /usr/share/man/man1 && \
-	apt-get install -qy --no-install-recommends --auto-remove wget gdebi-core procps dumb-init openjdk-8-jre-headless && \
+	apt-get install -qy --no-install-recommends --auto-remove wget gdebi-core patch procps dumb-init openjdk-8-jre-headless && \
 	cd /tmp && \
 	wget -nv ${PKGURL} && \
 	gdebi -n unifi_sysvinit_all.deb && \
-	apt-get purge -qy --auto-remove wget gdebi-core && \
+	cd /usr/lib/unifi/bin && \
+	patch unifi.init < /tmp/unifi.init.patch && \
+	apt-get purge -qy --auto-remove wget gdebi-core patch && \
 	apt-get clean && \
 	rm -rf /tmp/* /var/tmp/* /var/lib/apt/lists/*
 
