@@ -1,0 +1,13 @@
+--- unifi.init.orig	2017-06-02 05:35:37.642072995 +0000
++++ unifi.init	2017-06-02 05:37:13.920033698 +0000
+@@ -180,8 +180,8 @@
+  -cp /usr/share/java/commons-daemon.jar:${BASEDIR}/lib/ace.jar \
+  -pidfile ${PIDFILE} \
+  -procname ${NAME} \
+- -outfile SYSLOG \
+- -errfile SYSLOG \
++ -outfile ${LOGDIR}/unifi.out.log \
++ -errfile ${LOGDIR}/unifi.err.log \
+  -user ${UNIFI_USER} \
+  ${JSVC_EXTRA_OPTS} \
+  ${JVM_OPTS}"
