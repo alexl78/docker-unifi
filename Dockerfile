@@ -21,4 +21,4 @@ VOLUME ["/var/lib/unifi", "/var/run/unifi", "/var/log/unifi"]
 EXPOSE 6789/tcp 8080/tcp 8443/tcp 8880/tcp 8843/tcp 3478/udp
 
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
-CMD ["/bin/bash", "-c", "/etc/init.d/unifi start && exec /bin/bash"]
+CMD ["/bin/bash", "-c", "chown -R unifi:unifi /var/lib/unifi /var/run/unifi /var/log/unifi && /etc/init.d/unifi start && exec /bin/bash"]
