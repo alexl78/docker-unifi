@@ -1,5 +1,13 @@
 # unifi
 
+[![Docker Automated buil](https://img.shields.io/docker/automated/alexl78/unifi.svg)]() [![Docker Build Status](https://img.shields.io/docker/build/alexl78/unifi.svg)]() [![Docker Pulls](https://img.shields.io/docker/pulls/alexl78/unifi.svg)]() [![Docker Stars](https://img.shields.io/docker/stars/alexl78/unifi.svg)]()
+
+## Docker tags:
+| Tag | UniFi Version | Description | Release Date |
+| --- | :---: | --- | :---: |
+| [latest](https://github.com/alexl78/docker-unifi/blob/master/Dockerfile) | [5.6.20](https://community.ubnt.com/t5/UniFi-Beta-Blog/UniFi-5-6-20-Stable-Candidate-has-been-released/ba-p/2113208) | UniFi latest release | 2017-10-25 |
+| [5.6.20](https://github.com/alexl78/docker-unifi/blob/master/Dockerfile) | [5.6.20](https://community.ubnt.com/t5/UniFi-Beta-Blog/UniFi-5-6-20-Stable-Candidate-has-been-released/ba-p/2113208) | UniFi latest release | 2017-10-25 |
+
 ## Description
 This is a containerized version of [Ubiqiti Network](https://www.ubnt.com/)'s Unifi Controller version 5.
 The container should run on host network (`--net=host`) and in privileged mode (`--privileged`).
