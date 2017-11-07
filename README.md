@@ -7,7 +7,7 @@
 | --- | :---: | --- | :---: |
 | [latest](https://github.com/alexl78/docker-unifi/blob/master/Dockerfile) | [5.7.3](https://community.ubnt.com/t5/UniFi-Beta-Blog/UniFi-5-7-3-Unstable-has-been-released/ba-p/2119632) | Latest UniFi Unstable | 2017-10-31 |
 | [stable](https://github.com/alexl78/docker-unifi/blob/5.6.22/Dockerfile) | [5.6.22](https://community.ubnt.com/t5/UniFi-Beta-Blog/UniFi-5-6-22-Stable-Candidate-has-been-released/ba-p/2127830) | Latest UniFi Stable  | 2017-11-07 |
-| [5.XX.YY]() | [5.XX.YY]() | UniFi Release 5.XX.YY | |
+| 5.XX.YY | 5.XX.YY | UniFi Release 5.XX.YY | YYYY-MM-DD |
 
 ## Description
 This is a containerized version of [Ubiqiti Network](https://www.ubnt.com/)'s Unifi Controller version 5.
