@@ -5,10 +5,10 @@
 ## Docker tags:
 | Tag | UniFi Version | Description | Release Date |
 | --- | :---: | --- | :---: |
-| [latest](https://github.com/alexl78/docker-unifi/blob/master/Dockerfile) | [5.7.8](https://community.ubnt.com/t5/UniFi-Beta-Blog/UniFi-5-7-8-Unstable-has-been-released/ba-p/2149934) | Latest UniFi Unstable | 2017-11-24 |
-| [unstable-5.7.7](https://github.com/alexl78/docker-unifi/blob/unstable-5.7.7/Dockerfile) | [5.7.7](https://community.ubnt.com/t5/UniFi-Beta-Blog/UniFi-5-7-7-Unstable-has-been-released/ba-p/2143273) | UniFi Release 5.7.7 | 2017-11-18 |
-| [stable](https://github.com/alexl78/docker-unifi/blob/5.6/Dockerfile) | [5.6.24](https://community.ubnt.com/t5/UniFi-Updates-Blog/UniFi-5-6-24-Stable-Candidate-has-been-released/ba-p/2141297) | Latest UniFi Stable | 2017-11-16 |
-| [stable-5.6.23](https://github.com/alexl78/docker-unifi/blob/stable-5.6.23/Dockerfile) | [5.6.23](https://community.ubnt.com/t5/UniFi-Beta-Blog/UniFi-5-6-23-Stable-Candidate-has-been-released/ba-p/2131134) | UniFi Release 5.6.23 | 2017-11-09 |
+| [latest](https://github.com/alexl78/docker-unifi/blob/master/Dockerfile) | [5.7.10](https://community.ubnt.com/t5/UniFi-Beta-Blog/UniFi-5-7-10-Testing-has-been-released/ba-p/2169697) | Latest UniFi Testing | 2017-12-11 |
+| [unstable-5.7.8](https://github.com/alexl78/docker-unifi/blob/unstable-5.7.8/Dockerfile) | [5.7.8](https://community.ubnt.com/t5/UniFi-Beta-Blog/UniFi-5-7-8-Unstable-has-been-released/ba-p/2149934) | UniFi Release 5.7.8 | 2017-11-24 |
+| [stable](https://github.com/alexl78/docker-unifi/blob/5.6/Dockerfile) | [5.6.27](https://community.ubnt.com/t5/UniFi-Beta-Blog/UniFi-5-6-27-Stable-Candidate-has-been-released/ba-p/2169686) | Latest UniFi Stable | 2017-12-11 |
+| [stable-5.6.24](https://github.com/alexl78/docker-unifi/blob/stable-5.6.24/Dockerfile) | [5.6.24](https://community.ubnt.com/t5/UniFi-Updates-Blog/UniFi-5-6-24-Stable-Candidate-has-been-released/ba-p/2141297) | UniFi Release 5.6.24 | 2017-11-16 |
 
 ## Description
 This is a containerized version of [Ubiqiti Network](https://www.ubnt.com/)'s Unifi Controller version 5.
