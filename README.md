@@ -7,7 +7,7 @@
 | --- | :---: | --- | :---: |
 | [latest](https://github.com/alexl78/docker-unifi/blob/master/Dockerfile) | [5.7.12](https://community.ubnt.com/t5/UniFi-Beta-Blog/UniFi-5-7-12-Stable-Candidate-has-been-released/ba-p/2186624) | Latest UniFi Stable | 2017-12-27 |
 | [testing-5.7.11](https://github.com/alexl78/docker-unifi/blob/testing-5.7.11/Dockerfile) | [5.7.11](https://community.ubnt.com/t5/UniFi-Beta-Blog/UniFi-5-7-11-Testing-has-been-released/ba-p/2180775) | UniFi Release 5.7.11 | 2017-12-20 |
- [stable](https://github.com/alexl78/docker-unifi/blob/5.6/Dockerfile) | [5.6.29](https://community.ubnt.com/t5/UniFi-Updates-Blog/UniFi-5-6-29-Stable-Candidate-has-been-released/ba-p/2180909) | Latest UniFi Stable | 2017-12-20 |
+| [stable](https://github.com/alexl78/docker-unifi/blob/5.6/Dockerfile) | [5.6.29](https://community.ubnt.com/t5/UniFi-Updates-Blog/UniFi-5-6-29-Stable-Candidate-has-been-released/ba-p/2180909) | Latest UniFi Stable | 2017-12-20 |
 | [stable-5.6.27](https://github.com/alexl78/docker-unifi/blob/stable-5.6.27/Dockerfile) | [5.6.27](https://community.ubnt.com/t5/UniFi-Beta-Blog/UniFi-5-6-27-Stable-Candidate-has-been-released/ba-p/2169686) |  UniFi Release 5.6.27 | 2017-12-11 |
 
 ## Description
