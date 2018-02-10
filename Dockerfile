@@ -5,10 +5,11 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV PKGURL=https://dl.ubnt.com/unifi/5.7.18-121f169b8c/unifi_sysvinit_all.deb
 
 COPY unifi.init.patch /tmp/
-RUN apt-get clean && \
+RUN mkdir -p /usr/share/man/man1 && \
+	touch /usr/share/man/man1/sh.distrib.1.gz && \
+	apt-get clean && \
 	apt-get update && \
 	apt-get dist-upgrade -qy && \
-	mkdir -p /usr/share/man/man1 && \
 	apt-get install -qy --no-install-recommends --auto-remove wget gdebi-core patch procps dumb-init openjdk-8-jre-headless && \
 	cd /tmp && \
 	wget -nv ${PKGURL} && \
