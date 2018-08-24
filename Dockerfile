@@ -2,7 +2,7 @@ FROM debian:testing-slim
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-ENV PKGURL=https://dl.ubnt.com/unifi/5.9.22-d2a4718971/unifi_sysvinit_all.deb
+ENV PKGURL=https://dl.ubnt.com/unifi/5.9.24-64c9fed777/unifi_sysvinit_all.deb
 
 COPY unifi.init.patch /tmp/
 RUN mkdir -p /usr/share/man/man1 && \
