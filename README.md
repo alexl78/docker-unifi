@@ -5,7 +5,8 @@
 ## Docker tags:
 | Tag | UniFi Version | Description | Release Date |
 | --- | :---: | --- | :---: |
-| [latest](https://github.com/alexl78/docker-unifi/blob/master/Dockerfile) | [5.10.5](https://community.ubnt.com/t5/UniFi-Beta-Blog/UniFi-Network-Controller-5-10-5-beta-has-been-released/ba-p/2627904) | Latest UniFi Beta | 2019-01-10|
+| [latest](https://github.com/alexl78/docker-unifi/blob/master/Dockerfile) | [5.10.10](https://community.ubnt.com/t5/UniFi-Beta-Blog/UniFi-Network-Controller-5-10-10-Stable-Candidate-has-been/ba-p/2649077) | Latest UniFi Stable | 2019-01-26|
+| [beta-5.10.5](https://github.com/alexl78/docker-unifi/blob/beta-5.10.5/Dockerfile) | [5.10.5](https://community.ubnt.com/t5/UniFi-Beta-Blog/UniFi-Network-Controller-5-10-5-beta-has-been-released/ba-p/2627904) |  UniFi Release 5.10.5 | 2019-01-10|
 | [stable](https://github.com/alexl78/docker-unifi/blob/5.9/Dockerfile) | [5.9.32](https://community.ubnt.com/t5/UniFi-Beta-Blog/UniFi-SDN-Controller-5-9-32-Stable-Candidate-has-been-released/ba-p/2555555) | Latest UniFi Stable | 2018-11-06|
 | [stable-5.9.29](https://github.com/alexl78/docker-unifi/blob/stable-5.9.29/Dockerfile) | [5.9.29](https://community.ubnt.com/t5/UniFi-Updates-Blog/UniFi-SDN-Controller-5-9-29-Stable-Candidate-has-been-released/ba-p/2507610) | UniFi Release 5.9.29 | 2018-09-26|
 
