@@ -1,4 +1,4 @@
-FROM debian:testing-slim
+FROM debian:unstable-slim
 
 ENV DEBIAN_FRONTEND=noninteractive
 
