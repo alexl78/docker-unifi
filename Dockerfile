@@ -2,12 +2,10 @@ FROM debian:unstable-slim
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-ENV PKGURL=https://dl.ubnt.com/unifi/5.10.20-b06c46ec1d/unifi_sysvinit_all.deb
+ENV PKGURL=https://dl.ubnt.com/unifi/5.10.20/unifi_sysvinit_all.deb
 
 COPY unifi.init.patch /tmp/
-RUN mkdir -p /usr/share/man/man1 && \
-	touch /usr/share/man/man1/sh.distrib.1.gz && \
-	apt-get clean && \
+RUN apt-get clean && \
 	apt-get update && \
 	apt-get dist-upgrade -qy && \
 	apt-get install -qy --no-install-recommends --auto-remove wget gdebi-core patch procps dumb-init openjdk-8-jre-headless && \
@@ -26,4 +24,4 @@ VOLUME ["/var/lib/unifi", "/var/run/unifi", "/var/log/unifi"]
 EXPOSE 6789/tcp 8080/tcp 8443/tcp 8880/tcp 8843/tcp 3478/udp
 
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
-CMD ["/bin/bash", "-c", "chown -R unifi:unifi /var/lib/unifi /var/run/unifi /var/log/unifi && rm -f /var/run/unifi/unifi.pid && bash -x /etc/init.d/unifi start && exec /bin/bash"]
+CMD ["/bin/bash", "-c", "chown -R unifi:unifi /var/lib/unifi /var/run/unifi /var/log/unifi && rm -f /var/run/unifi.pid && bash -x /etc/init.d/unifi start && exec /bin/bash"]
