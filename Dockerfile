@@ -9,7 +9,7 @@ RUN mkdir -p /usr/share/man/man1 && \
 	apt-get clean && \
 	apt-get update && \
 	apt-get dist-upgrade -qy && \
-	apt-get install -qy --no-install-recommends --auto-remove wget gdebi-core patch procps dumb-init openjdk-8-jre-headless && \
+	apt-get install -qy --no-install-recommends --auto-remove wget gdebi-core patch procps dumb-init openjdk-11-jre-headless && \
 	cd /tmp && \
 	wget -nv ${PKGURL} && \
 	gdebi -n unifi_sysvinit_all.deb && \
