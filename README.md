@@ -5,10 +5,10 @@
 ## Docker tags:
 | Tag | UniFi Version | Description | Release Date |
 | --- | :---: | --- | :---: |
-| [latest](https://github.com/alexl78/docker-unifi/blob/master/Dockerfile) | [5.11.26](https://community.ubnt.com/t5/UniFi-Beta-Blog/UniFi-Network-Controller-5-11-26-Unstable-has-been-released/ba-p/2794468) | Latest UniFi Unstable | 2019-05-25|
-| [unstable-5.11.18](https://github.com/alexl78/docker-unifi/blob/unstable-5.11.18/Dockerfile) | [5.11.18](https://community.ubnt.com/t5/UniFi-Beta-Blog/UniFi-Network-Controller-5-11-18-Unstable-has-been-released/ba-p/2759716) | UniFi Release 5.11.18 | 2019-04-24|
+| [latest](https://github.com/alexl78/docker-unifi/blob/master/Dockerfile) | [5.11.29](https://community.ubnt.com/t5/UniFi-Beta-Blog/UniFi-Network-Controller-5-11-29-Testing-has-been-released/ba-p/2809129) | Latest UniFi Testing | 2019-06-07|
+| [unstable-5.11.26](https://github.com/alexl78/docker-unifi/blob/unstable-5.11.26/Dockerfile) | [5.11.26](https://community.ubnt.com/t5/UniFi-Beta-Blog/UniFi-Network-Controller-5-11-26-Unstable-has-been-released/ba-p/2794468) |UniFi Release 5.11.26 | 2019-05-25|
+| [stable-5.10.25](https://github.com/alexl78/docker-unifi/blob/stable-5.10.25/Dockerfile) | [5.10.25](https://community.ubnt.com/t5/UniFi-Beta-Blog/UniFi-Network-Controller-5-10-25-Stable-Candidate-has-been/ba-p/2809319) | UniFi Release 5.10.25 | 2019-06-07|
 | [stable-5.10.24](https://github.com/alexl78/docker-unifi/blob/stable-5.10.24/Dockerfile) | [5.10.24](https://community.ubnt.com/t5/UniFi-Updates-Blog/UniFi-Network-Controller-5-10-24-Stable-Candidate-has-been/ba-p/2790242) | UniFi Release 5.10.24 | 2019-05-21|
-| [stable-5.10.20](https://github.com/alexl78/docker-unifi/blob/stable-5.10.20/Dockerfile) | [5.10.20](https://community.ubnt.com/t5/UniFi-Updates-Blog/UniFi-Network-Controller-5-10-20-Stable-has-been-released/ba-p/2713745) | UniFi Release 5.10.20 | 2019-03-12|
 
 ## Description
 This is a containerized version of [Ubiqiti Network](https://www.ubnt.com/)'s Unifi Controller version 5.
