@@ -5,8 +5,8 @@
 ## Docker tags:
 | Tag | UniFi Version | Description | Release Date |
 | --- | :---: | --- | :---: |
-| [latest](https://github.com/alexl78/docker-unifi/blob/master/Dockerfile) | [5.11.31](https://community.ui.com/releases/UniFi-Network-Controller-5-11-31/c7f8a8a0-0414-4324-a567-1f2b3cb6affa) | Latest UniFi Testing | 2019-06-22|
-| [testing-5.11.29](https://github.com/alexl78/docker-unifi/blob/unstable-5.11.29/Dockerfile) | [5.11.29](https://community.ui.com/releases/UniFi-Network-Controller-5-11-29-Testing-has-been-released-5-11-29/cd2c7c48-4fab-4257-897d-975c1fc824c1) | UniFi Release 5.11.29 | 2019-06-07|
+| [latest](https://github.com/alexl78/docker-unifi/blob/master/Dockerfile) | [5.11.34](https://community.ui.com/releases/UniFi-Network-Controller-5-11-34/d0aead68-714b-4802-a984-ed65adbd6a50) | Latest UniFi Testing | 2019-07-23|
+| [testing-5.11.31](https://github.com/alexl78/docker-unifi/blob/testing-5.11.31/Dockerfile) | [5.11.31](https://community.ui.com/releases/UniFi-Network-Controller-5-11-31/c7f8a8a0-0414-4324-a567-1f2b3cb6affa) | UniFi Release 5.11.31 | 2019-06-22|
 | [stable-5.10.25](https://github.com/alexl78/docker-unifi/blob/stable-5.10.25/Dockerfile) | [5.10.25](https://community.ui.com/releases/UniFi-Network-Controller-5-10-25-Stable-Candidate-has-been-released-5-10-25/fe80dc17-6a4d-4d72-bb57-4ae6fe89f341) | UniFi Release 5.10.25 | 2019-06-07|
 | [stable-5.10.24](https://github.com/alexl78/docker-unifi/blob/stable-5.10.24/Dockerfile) | [5.10.24](https://community.ui.com/releases/UniFi-Network-Controller-5-10-24-Stable-has-been-released-5-10-24/793b8c61-3c86-4e48-a697-22f3c6c6e5a5) | UniFi Release 5.10.24 | 2019-05-21|
 
