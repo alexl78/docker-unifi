@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-ENV PKGURL=https://dl.ui.com/unifi/5.12.13-a94c374f1a/UniFi.pkg
+ENV PKGURL=https://dl.ui.com/unifi/5.11.52-3b4f13d722/UniFi.pkg
 
 COPY unifi.init.patch /tmp/
 RUN apt-get clean && \
