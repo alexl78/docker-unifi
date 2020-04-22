@@ -2,23 +2,21 @@ FROM ubuntu:latest
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-ENV PKGURL=https://dl.ubnt.com/unifi/5.13.10-202b4c03d0/unifi_sysvinit_all.deb
+ENV PKGURL=https://dl.ui.com/unifi/5.13.18-b0197fba32/unifi_sysvinit_all.deb
 
 COPY unifi.init.patch /tmp/
+COPY mongodb-org-server_3.9.9_all.deb /tmp/
 RUN apt-get clean && \
 	apt-get update && \
 	apt-get dist-upgrade -qy && \
-	apt-get install -qy --no-install-recommends --auto-remove gnupg wget gdebi-core patch procps dumb-init openjdk-8-jre-headless && \
-	apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5 && \
-	echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.6 multiverse" > /etc/apt/sources.list.d/mongodb-org-3.6.list && \
-	apt-get update && \
-	apt-get install -qy --no-install-recommends --auto-remove mongodb-org-server && \
+	apt-get install -qy --no-install-recommends --auto-remove patch dumb-init openjdk-8-jre-headless mongodb-server curl && \
 	cd /tmp && \
-	wget -nv ${PKGURL} && \
-	gdebi -n unifi_sysvinit_all.deb && \
+	curl -O -J ${PKGURL} && \
+	dpkg -i mongodb-org-server_3.9.9_all.deb && \
+	apt-get install -qy --no-install-recommends --auto-remove ./unifi_sysvinit_all.deb && \
 	cd /usr/lib/unifi/bin && \
 	patch unifi.init < /tmp/unifi.init.patch && \
-	apt-get purge -qy --auto-remove gnupg wget gdebi-core patch && \
+	apt-get purge -qy --auto-remove patch && \
 	apt-get clean && \
 	rm -rf /tmp/* /var/tmp/* /var/lib/apt/lists/* && \
 	echo "FANCYTTY=0" > /etc/lsb-base-logging.sh
