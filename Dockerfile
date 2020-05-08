@@ -2,17 +2,15 @@ FROM ubuntu:latest
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-ENV PKGURL=https://dl.ui.com/unifi/5.13.18-b0197fba32/unifi_sysvinit_all.deb
+ENV PKGURL=https://dl.ui.com/unifi/5.13.22-3c75ba51cf/unifi_sysvinit_all.deb
 
 COPY unifi.init.patch /tmp/
-COPY mongodb-org-server_3.9.9_all.deb /tmp/
 RUN apt-get clean && \
 	apt-get update && \
 	apt-get dist-upgrade -qy && \
 	apt-get install -qy --no-install-recommends --auto-remove patch dumb-init openjdk-8-jre-headless mongodb-server curl && \
 	cd /tmp && \
 	curl -O -J ${PKGURL} && \
-	dpkg -i mongodb-org-server_3.9.9_all.deb && \
 	apt-get install -qy --no-install-recommends --auto-remove ./unifi_sysvinit_all.deb && \
 	cd /usr/lib/unifi/bin && \
 	patch unifi.init < /tmp/unifi.init.patch && \
