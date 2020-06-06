@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-ENV PKGURL=https://dl.ui.com/unifi/5.13.27-732a2fc288/unifi_sysvinit_all.deb
+ENV PKGURL=https://dl.ui.com/unifi/5.14.9-393d589aeb/unifi_sysvinit_all.deb
 
 COPY unifi.init.patch /tmp/
 RUN apt-get clean && \
