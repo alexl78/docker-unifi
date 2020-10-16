@@ -5,9 +5,8 @@
 ## Docker tags:
 | Tag | UniFi Version | Description | Release Date |
 | --- | :---: | --- | :---: |
-| [latest](https://github.com/alexl78/docker-unifi/blob/master/Dockerfile) | [6.0.23](https://community.ui.com/releases/UniFi-Network-Controller-6-0-23/97c4c8cd-e330-4e24-a6ba-0e4aa028cbeb) | Latest UniFi Stable | 2020-09-18|
-| [stable-6.0.20](https://github.com/alexl78/docker-unifi/blob/stable-6.0.20/Dockerfile) | [6.0.20](https://community.ui.com/releases/UniFi-Network-Controller-6-0-20/3ddd1684-6747-4a66-a038-5ff0b25f4027) | UniFi Release 6.0.20 | 2020-09-11|
-| [testing-5.14.17](https://github.com/alexl78/docker-unifi/blob/testing-5.14.17/Dockerfile) | [5.14.17](https://community.ui.com/releases/UniFi-Network-Controller-5-14-17/35321135-e0b0-4d07-8f4c-144a504c77f8) | UniFi Release 5.14.17 | 2020-07-03|
+| [latest](https://github.com/alexl78/docker-unifi/blob/master/Dockerfile) | [6.1.19](https://community.ui.com/releases/UniFi-Network-Controller-6-1-19/05b00ed5-fab3-4722-898d-0d1e33e0149a) | Latest UniFi Testing | 2020-10-14|
+| [stable-6.0.23](https://github.com/alexl78/docker-unifi/blob/stable-6.0.23/Dockerfile) | [6.0.23](https://community.ui.com/releases/UniFi-Network-Controller-6-0-23/97c4c8cd-e330-4e24-a6ba-0e4aa028cbeb) | UniFi Release 6.0.23 | 2020-09-18|
 
 ## Description
 This is a containerized version of [Ubiqiti Network](https://www.ubnt.com/)'s Unifi Controller version 5.
