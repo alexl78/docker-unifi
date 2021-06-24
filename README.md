@@ -5,7 +5,8 @@
 ## Docker tags:
 | Tag | UniFi Version | Description | Release Date |
 | --- | :---: | --- | :---: |
-| [latest](https://github.com/alexl78/docker-unifi/blob/master/Dockerfile) | [6.2.23](https://community.ui.com/releases/UniFi-Network-Application-6-2-23/df89533b-184a-4fb7-b2c6-9f894b82df27) | Latest UniFi Stable | 2021-05-07|
+| [latest](https://github.com/alexl78/docker-unifi/blob/master/Dockerfile) | [6.2.26](https://community.ui.com/releases/UniFi-Network-Application-6-2-26/0dfcbc77-8a4f-4e20-bb93-07bbb0237e3a) | Latest UniFi Stable | 2021-06-08|
+| [stable-6.2.23](https://github.com/alexl78/docker-unifi/blob/stable-6.2.23/Dockerfile) | [6.2.23](https://community.ui.com/releases/UniFi-Network-Application-6-2-23/df89533b-184a-4fb7-b2c6-9f894b82df27) | UniFi Release 6.2.23 | 2021-05-07|
 | [stable-6.1.71](https://github.com/alexl78/docker-unifi/blob/stable-6.1.71/Dockerfile) | [6.1.71](https://community.ui.com/releases/UniFi-Network-Controller-6-1-71/0cffd3ed-7429-4529-9a20-9fead78ebf66) | UniFi Release 6.1.71 | 2021-03-24|
 
 ## Description
