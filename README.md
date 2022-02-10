@@ -3,11 +3,11 @@
 ## Docker tags:
 | Tag | UniFi Version | Description | Release Date |
 | --- | :---: | --- | :---: |
-| [latest](https://github.com/alexl78/docker-unifi/blob/master/Dockerfile) | [7.0.21](https://community.ui.com/releases/UniFi-Network-Application-7-0-21/f08ac16f-282a-43ac-9288-c8238e33d888) | Latest UniFi Stable | 2022-02-08|
-| [testing-7.0.20](https://github.com/alexl78/docker-unifi/blob/testing-7.0.20/Dockerfile) | [7.0.20](https://community.ui.com/releases/UniFi-Network-Application-7-0-20/b6bbd4b7-0d59-47eb-92a3-09092c4e0ffe) | UniFi Release 7.0.20 | 2022-01-26|
+| [latest](https://github.com/alexl78/docker-unifi/blob/master/Dockerfile) | [7.0.22](https://community.ui.com/releases/UniFi-Network-Application-7-0-22/dc707272-c726-4935-9d68-c5c50665b970) | Latest UniFi Stable | 2022-02-10|
+| [stable-7.0.21](https://github.com/alexl78/docker-unifi/blob/stable-7.0.21/Dockerfile) | [7.0.21](https://community.ui.com/releases/UniFi-Network-Application-7-0-21/f08ac16f-282a-43ac-9288-c8238e33d888) | UniFi Release 7.0.21 | 2022-02-08|
 
 ## Description
-This is a containerized version of [Ubiqiti Network](https://ui.com/)'s Unifi Controller version 6.
+This is a containerized version of [Ubiqiti Network](https://ui.com/)'s Unifi Controller version 7.
 The container should run on host network (`--net=host`) and in privileged mode (`--privileged`).
 
 ## Volumes:
