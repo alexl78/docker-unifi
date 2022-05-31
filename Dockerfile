@@ -1,20 +1,18 @@
-FROM ubuntu:latest
-
-ENV DEBIAN_FRONTEND=noninteractive
-
-ENV PKGURL=https://dl.ui.com/unifi/7.0.23-5eeb859f85/unifi_sysvinit_all.deb
+FROM debian:latest
 
 COPY unifi.init.patch /tmp/
-RUN apt-get clean && \
+RUN apt-get update && \
+	apt-get install -qy --no-install-recommends --auto-remove ca-certificates apt-transport-https wget && \
+	echo 'deb https://www.ui.com/downloads/unifi/debian stable ubiquiti' | tee /etc/apt/sources.list.d/100-ubnt-unifi.list && \
+	wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg https://dl.ui.com/unifi/unifi-repo.gpg && \
+	apt-mark hold openjdk-11-* && \
+	apt-get clean && \
 	apt-get update && \
 	apt-get dist-upgrade -qy && \
-	apt-get install -qy --no-install-recommends --auto-remove patch dumb-init openjdk-8-jre-headless mongodb-server curl && \
-	cd /tmp && \
-	curl -O -J ${PKGURL} && \
-	apt-get install -qy --no-install-recommends --auto-remove ./unifi_sysvinit_all.deb && \
+	apt-get install -qy --no-install-recommends --auto-remove patch dumb-init unifi && \
 	cd /usr/lib/unifi/bin && \
 	patch unifi.init < /tmp/unifi.init.patch && \
-	apt-get purge -qy --auto-remove patch && \
+	apt-get purge -qy --auto-remove patch wget && \
 	apt-get clean && \
 	rm -rf /tmp/* /var/tmp/* /var/lib/apt/lists/* && \
 	echo "FANCYTTY=0" > /etc/lsb-base-logging.sh
