@@ -11,7 +11,7 @@ RUN apt-get update && \
 	apt-get clean && \
 	apt-get update && \
 	apt-get dist-upgrade -qy && \
-	apt-get install -qy --no-install-recommends --auto-remove patch dumb-init mongodb-server unifi && \
+	apt-get install -qy --no-install-recommends --auto-remove patch dumb-init openjdk-8-jre-headless mongodb-server unifi && \
 	cd /usr/lib/unifi/bin && \
 	patch unifi.init < /tmp/unifi.init.patch && \
 	apt-get purge -qy --auto-remove patch wget && \
