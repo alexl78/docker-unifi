@@ -3,8 +3,8 @@
 ## Docker tags:
 | Tag | UniFi Version | Description | Release Date |
 | --- | :---: | --- | :---: |
-| [latest](https://github.com/alexl78/docker-unifi/blob/master/Dockerfile) | [7.0.23](https://community.ui.com/releases/UniFi-Network-Application-7-0-23/f1b404b4-f595-4346-aaa1-df6941e35525) | Latest UniFi Stable | 2022-02-21|
-| [stable-7.0.22](https://github.com/alexl78/docker-unifi/blob/stable-7.0.22/Dockerfile) | [7.0.22](https://community.ui.com/releases/UniFi-Network-Application-7-0-22/dc707272-c726-4935-9d68-c5c50665b970) | UniFi Release 7.0.22 | 2022-02-10|
+| [latest](https://github.com/alexl78/docker-unifi/blob/master/Dockerfile) | [7.1.66](https://community.ui.com/releases/UniFi-Network-Application-7-1-66/cf1208d2-3898-418c-b841-699e7b773fd4) | Latest UniFi Stable | 2022-05-18|
+| [stable-7.0.23](https://github.com/alexl78/docker-unifi/blob/stable-7.0.23/Dockerfile) | [7.0.23](https://community.ui.com/releases/UniFi-Network-Application-7-0-23/f1b404b4-f595-4346-aaa1-df6941e35525) | UniFi Release 7.0.23 | 2022-02-21|
 
 ## Description
 This is a containerized version of [Ubiqiti Network](https://ui.com/)'s Unifi Controller version 7.
